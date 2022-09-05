@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    158.87deg,
+    rgb(255 200 57 / 81%) -1.43%,
+    rgb(197 82 99) 105.54%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+  width: 650px;
+  height: 514px;
+  box-shadow: 1px 1px 10px red;
+  justify-content: center;
+  background-color: #fff;
+}
+.card-img {
+  display: none;
+  width: 325px;
+  height: 514px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(
+    158.87deg,
+    rgb(255 113 134) -1.43%,
+    rgb(255 200 57) 105.54%
+  );
+}
+.img {
+  position: absolute;
+
+  width: 323px;
+  height: 320px;
+  left: 0px;
+  top: 243px;
+
+  background: url("../man_standing_next_to_his_safe_at_home-256.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card-body {
+  position: relative;
+  width: 325px;
+  height: 514px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  display: block;
+  width: 82px;
+  height: 82px;
+  margin-top: 40px;
+  background: url("../man.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+h2 {
+  margin-top: 24px;
+  width: 100%;
+  height: 24px;
+  left: 424px;
+  top: 136px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.125em;
+
+  color: #27187e;
+}
+h3 {
+  font-weight: 400;
+  margin-bottom: 41px;
+  font-size: 12px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.form-control {
+  background-color: rgba(217, 217, 217, 1);
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 2.95rem;
+  font-size: 0.8rem;
+  line-height: 1.9;
+  color: #27187e;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 19px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.rem {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  margin-top: 33px;
+  width: 135px;
+  height: 40px;
+  border-radius: 19px;
+  outline: none;
+  margin-bottom: 30px;
+  border: 0;
+  box-shadow: 1px 2px 10px rgb(255 200 57);
+  color: #fff;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.btn-login {
+  background: linear-gradient(
+    158.87deg,
+    rgb(255 113 134) -1.43%,
+    rgb(255 200 57) 105.54%
+  );
+}
+.tombol {
+  display: flex;
+  justify-content: center;
+}
+.form-group:nth-child(1)::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../user-128.webp");
+  background-size: contain;
+  background-position: center;
+  padding: 3px;
+  margin-left: 9px;
+  margin-top: 7px;
+}
+.form-group:nth-child(2)::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 18px;
+  background: url("../lock-256.webp");
+  background-size: contain;
+  background-position: center;
+  padding: 3px;
+  margin-left: 9px;
+  margin-top: 9px;
+}
+.not::after {
+  content: " ";
+  width: 92px;
+  height: 45px;
+  display: block;
+  position: absolute;
+  background: url("../r1.svg");
+  transform: rotate(-90.02deg);
+  background-repeat: no-repeat;
+  right: 300px;
+  top: 83px;
+}
+.not::before {
+  content: " ";
+  width: 1px;
+  height: 73px;
+  display: block;
+  position: absolute;
+  background: url("../r2.svg");
+  background-repeat: no-repeat;
+  transform: rotate(-90.02deg);
+  right: 412px;
+  top: 50px;
+}
+@media (min-width: 992px) {
+  .card-img {
+    display: block;
+  }
+  .card {
+    justify-content: row;
+  }
+}
+@media (min-width: 768px) {
+  .card-img {
+    display: block;
+  }
+  .card {
+    justify-content: row;
+  }
+}
+@media (min-width: 1200px) {
+  .card-img {
+    display: block;
+  }
+  .card {
+    justify-content: row;
+  }
+}
+@media (min-width: 576px) {
+  .card {
+    justify-content: center;
+  }
+  .card {
+    justify-content: row;
+  }
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  font-size: 25px;
+  margin-top: 36px;
+  margin-left: 63px;
+}
+h4 {
+  font-weight: 100;
+  color: #fff;
+  font-size: 16px;
+  margin-top: -1px;
+  margin-left: 61px;
+}
+a {
+  text-decoration: none;
+  font-size: 13px;
+  color: grey;
+  letter-spacing: 0.8px;
+}
